@@ -40,33 +40,32 @@
     "drawing"
   ],
   "dependencies": {
-    "@electron/remote": "^2.0.1",
-    "adm-zip": "^0.4.7",
+    "@electron/remote": "^2.1.2",
+    "adm-zip": "^0.5.16",
     "archive-type": "^4.0.0",
-    "archiver": "^3.0.0",
-    "decompress": "^4.0.0",
-    "decompress-targz": "^4.0.0",
-    "easy-zip2": "^3.0.0",
-    "electron-log": "^2.2.17",
-    "jimp": "^0.6.4",
-    "less": "~3.8.1",
-    "lodash": "^4.13.1",
-    "md5": "^2.2.1",
-    "moment": "^2.13.0",
-    "nugget": "^2.0.0",
-    "perfect-freehand": "^1.0.16",
-    "q": "^1.4.1",
-    "rimraf": "^2.5.4",
-    "tar": "https://github.com/dgthanhan/node-tar/archive/6086b1ea82137c61eea4efe882dd514590e5b7a8.tar.gz",
-    "tar-fs": "^1.15.2",
-    "tar.gz": "https://github.com/dgthanhan/node-tar.gz/archive/e1a5ee27a620aa1bc1a421a8d797c843609e88eb.tar.gz",
-    "tmp": "0.0.33"
+    "archiver": "^7.0.1",
+    "decompress": "^4.2.1",
+    "decompress-targz": "^4.1.1",
+    "easy-zip2": "^3.1.0",
+    "electron-log": "^5.4.0",
+    "jimp": "^1.6.0",
+    "less": "^4.3.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "moment": "^2.30.1",
+    "nugget": "^2.2.0",
+    "perfect-freehand": "^1.2.2",
+    "q": "^1.5.1",
+    "rimraf": "^6.0.1",
+    "tar": "^7.4.3",
+    "tar-fs": "^3.0.9",
+    "tmp": "^0.2.3"
   },
   "private": true,
   "devDependencies": {
-    "electron": "16.0.0",
-    "electron-builder": "23.6.0",
-    "electron-updater": "^5.3.0"
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12",
+    "electron-updater": "^6.6.2"
   },
   "build": {
     "appId": "vn.evolus.pencil",
@@ -74,11 +73,15 @@
     "copyright": "Copyright © 2008-2016 Evolus. All rights reserved.",
     "mac": {
       "category": "public.app-category.graphics-design",
-	  "icon": "build/icon.icns",
-      "target": [{
-           "target": "dmg",
-           "arch": ["universal"]
-      }]
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
     },
     "dmg": {
       "contents": [
@@ -117,8 +120,7 @@
       "perMachine": true,
       "allowToChangeInstallationDirectory": true
     },
-    "electronDownload": {
-    },
+    "electronDownload": {},
     "fileAssociations": {
       "ext": [
         "ep",
