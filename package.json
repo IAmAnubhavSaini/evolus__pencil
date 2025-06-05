@@ -1,10 +1,10 @@
 {
   "name": "Pencil",
   "devDependencies": {
-    "electron": "16.0.0",
-    "electron-builder": "23.3.3",
-    "electron-rebuild": "^1.8.5",
-    "rimraf": "^2.5.4"
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9",
+    "rimraf": "^6.0.1"
   },
   "build": {
     "appId": "vn.evolus.pencil",
@@ -12,10 +12,14 @@
     "copyright": "Copyright © 2008-2016 Evolus. All rights reserved.",
     "mac": {
       "category": "public.app-category.graphics-design",
-      "target": [{
-           "target": "dmg",
-           "arch": ["arm64"]
-      }]
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ]
     },
     "dmg": {
       "contents": [
@@ -87,6 +91,6 @@
   },
   "private": true,
   "dependencies": {
-    "@electron/remote": "^2.0.1"
+    "@electron/remote": "^2.1.2"
   }
 }
